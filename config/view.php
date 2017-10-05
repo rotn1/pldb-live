@@ -6,7 +6,7 @@ $viewsPaths = [$viewBasePath];
 
 $agent = new Jenssegers\Agent\Agent();
 
-if ($agent->isMobile()) {
+if ($agent->isMobile() && !$agent->isTablet()) {
     array_unshift($viewsPaths, $viewBasePath.'/mobile');
 }
 

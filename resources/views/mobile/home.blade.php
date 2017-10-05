@@ -4,6 +4,16 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
+    <button onclick='screen.orientation.unlock()'>
+  Unlock
+</button>
+<button onclick="screen.orientation.lock('portrait')">
+  Lock to portrait
+</button>
+<button onclick="screen.orientation.lock('landscape')">
+  Lock to landscape
+</button>
+
             <div class="text-center">
 
                 <div>

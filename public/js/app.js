@@ -763,6 +763,14 @@ module.exports = __webpack_require__(36);
 
 __webpack_require__(9);
 
+var show = function show() {
+  console.log("Orientation type is " + screen.orientation.type);
+  console.log("Orientation angle is " + screen.orientation.angle);
+};
+
+screen.orientation.addEventListener("change", show);
+window.onload = show;
+
 $('tr[data-href]').on("click", function () {
   href = $(this).data('href');
   axios.get(href).then(function (response) {

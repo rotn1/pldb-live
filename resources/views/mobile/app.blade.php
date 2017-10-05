@@ -12,7 +12,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'PLDB Live') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app_mobile.css') }}" rel="stylesheet">
