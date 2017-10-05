@@ -7,25 +7,6 @@
 
 require('./bootstrap');
 
-var start = function() {
-    screen.orientation.lock('landscape-primary').then(
-      startInternal,
-      function() {
-        alert('To start, rotate your screen to landscape.');
-
-        var orientationChangeHandler = function() {
-          if (!screen.orientation.type.startsWith('landscape')) {
-            return;
-          }
-          screen.orientation.removeEventListener('change', orientationChangeHandler);
-          startInternal();
-        }
-
-        screen.orientation.addEventListener('change', orientationChangeHandler);
-      });
-  }
-  window.onload = start;
-
 $('tr[data-href]').on("click", function() {
 	href = $(this).data('href');
 	axios.get(href).then(function (response) {
@@ -43,6 +24,20 @@ $('tr[data-href]').on("click", function() {
 	}).catch(function (error) {
 		console.log(error);
 	});
+});
+
+$('div.box[data-href]').on("click", function() {
+  href = $(this).data('href');
+  axios.get(href).then(function (response) {
+  $("#modal-container").removeAttr("class").addClass('five');
+    $('nav').hide('slow');
+    $("body").addClass("modal-active");
+    $('.modal').scrollTop(0);
+    $('#details').html(response.data);
+    $('#live-div').append("<p id='match_ref' hidden>"+href+"</p>");
+  }).catch(function (error) {
+    console.log(error);
+  });
 });
 
 $("#live-button").on("click", function() {

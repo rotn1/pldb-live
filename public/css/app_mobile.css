@@ -8350,6 +8350,52 @@ button.close {
   }
 }
 
+.box {
+  float: left;
+  width: 30%;
+  margin-left: 2.5%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.box:before {
+  display: block;
+  padding-top: 100%;
+}
+
+.red {
+  background-color: rgba(252, 83, 83, 0.5);
+}
+
+.green {
+  background-color: rgba(173, 252, 83, 0.5);
+}
+
+.grey {
+  background-color: rgba(188, 188, 188, 0.5);
+}
+
+.span-matches {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.span-matches-score {
+  font-size: 1.5em;
+}
+
+.team-logo-matches {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+}
+
 #hzline {
   display: block;
   height: 1px;
@@ -8465,7 +8511,7 @@ button.close {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8) url("http://i.stack.imgur.com/FhHRx.gif") center center no-repeat;
+  background: rgba(255, 255, 255, 0.8) url("https://www.betsete.com/static/imgs/loading.gif") center center no-repeat;
 }
 
 /* When the body has the loading class, we turn
@@ -8525,6 +8571,39 @@ body.loading .my_modal {
           animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
+#modal-container.five {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#modal-container.five .modal-background {
+  background: transparent;
+  -webkit-animation: fadeIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.five .modal-background .modal {
+  -webkit-transform: translateX(-1500px);
+          transform: translateX(-1500px);
+  -webkit-animation: roadRunnerIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: roadRunnerIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.five.out {
+  -webkit-animation: quickScaleDown 0s .8s linear forwards;
+          animation: quickScaleDown 0s .8s linear forwards;
+}
+
+#modal-container.five.out .modal-background {
+  -webkit-animation: fadeOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.five.out .modal-background .modal {
+  -webkit-animation: roadRunnerOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: roadRunnerOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
 #modal-container .modal-background {
   display: table-cell;
   background: rgba(0, 0, 0, 0.8);
@@ -8535,7 +8614,8 @@ body.loading .my_modal {
   background: white;
   padding: 0px;
   width: 100%;
-  max-height: calc(100vh - 68px);
+  padding-bottom: 68px;
+  max-height: calc(100vh);
   overflow-y: auto;
   display: inline-block;
   border-radius: 3px;

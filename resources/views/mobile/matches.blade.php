@@ -1,7 +1,7 @@
 <!-- MOBILE -->
 
 <!-- HOME TEAM -->
-<div style="margin-top: 10px;" class="col-xs-12 col-sm-12 col-md-12">
+<div style="margin-top: 10px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	<table class="table-sm">
 		<thead>
 			<tr>
@@ -64,7 +64,7 @@
 				<th>Position</th>
 				<th>Vote</th>
 				<th>Events</th>
-				<th>Fantavote</th>
+				<th>FVote</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -96,7 +96,7 @@
 <hr id='hzline' />
 
 <!-- AWAY TEAM -->
-<div style="margin-top: 10px;" class="col-xs-12 col-sm-12 col-md-12">
+<div style="margin-top: 10px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	<table class="table-sm">
 		<thead>
 			<tr>
@@ -104,7 +104,7 @@
 			</tr>
 			<tr class="table-header" style="font-size: 1em;">
 				<th colspan="1" style="width: 20%">Score</th>
-				<th colspan="1" style="width: 20%">Fantascore</th>
+				<th colspan="1" style="width: 20%">FScore</th>
 				<th colspan="1" style="width: 20%">Mod A</th>
 				<th colspan="1" style="width: 20%">Mod C</th>
 				<th colspan="1" style="width: 20%">Mod D</th>
@@ -128,7 +128,7 @@
 				<th>Position</th>
 				<th>Vote</th>
 				<th>Events</th>
-				<th>Fantavote</th>
+				<th>FVote</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -159,7 +159,7 @@
 				<th>Position</th>
 				<th>Vote</th>
 				<th>Events</th>
-				<th>Fantavote</th>
+				<th>FVote</th>
 			</tr>
 		</thead>
 		<tbody>

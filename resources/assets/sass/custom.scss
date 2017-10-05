@@ -1,3 +1,47 @@
+.box {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.box:before {
+  display: block;
+  padding-top: 100%;
+}
+
+.red{
+      background-color: rgba(252, 83, 83, .5);
+}
+
+.green {
+      background-color: rgba(173, 252, 83, .5);
+}
+
+.grey {
+  background-color: rgba(188, 188, 188, .5);
+}
+
+.span-matches {
+  font-size: 2.5em;
+  margin-right: 25px;
+}
+
+.span-matches-score {
+  font-size: 2em;
+}
+
+.team-logo-matches {
+  display:inline;
+  margin-top:-7px;
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
 .FR {
 	background-color: #a5a5a5;
 }
@@ -236,18 +280,18 @@ body.loading .my_modal {
     transform:scale(1);
     .modal-background {
       background:rgba(0,0,0,.0);
-      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      animation: fadeIn .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       .modal {
         transform:translateX(-1500px);
-        animation: roadRunnerIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        animation: roadRunnerIn .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       }
     }
     &.out {
-      animation: quickScaleDown 0s .5s linear forwards;
+      animation: quickScaleDown 0s .8s linear forwards;
       .modal-background {
-        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        animation: fadeOut .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         .modal {
-          animation: roadRunnerOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          animation: roadRunnerOut .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         }
       }
     }

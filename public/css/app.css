@@ -8350,6 +8350,50 @@ button.close {
   }
 }
 
+.box {
+  float: left;
+  width: 30%;
+  margin-left: 2.5%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.box:before {
+  display: block;
+  padding-top: 100%;
+}
+
+.red {
+  background-color: rgba(252, 83, 83, 0.5);
+}
+
+.green {
+  background-color: rgba(173, 252, 83, 0.5);
+}
+
+.grey {
+  background-color: rgba(188, 188, 188, 0.5);
+}
+
+.span-matches {
+  font-size: 2.5em;
+  margin-right: 25px;
+}
+
+.span-matches-score {
+  font-size: 2em;
+}
+
+.team-logo-matches {
+  display: inline;
+  margin-top: -7px;
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
 .FR {
   background-color: #a5a5a5;
 }
@@ -8627,30 +8671,30 @@ body.loading .my_modal {
 
 #modal-container.five .modal-background {
   background: transparent;
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: fadeIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #modal-container.five .modal-background .modal {
   -webkit-transform: translateX(-1500px);
           transform: translateX(-1500px);
-  -webkit-animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: roadRunnerIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: roadRunnerIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #modal-container.five.out {
-  -webkit-animation: quickScaleDown 0s .5s linear forwards;
-          animation: quickScaleDown 0s .5s linear forwards;
+  -webkit-animation: quickScaleDown 0s .8s linear forwards;
+          animation: quickScaleDown 0s .8s linear forwards;
 }
 
 #modal-container.five.out .modal-background {
-  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: fadeOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #modal-container.five.out .modal-background .modal {
-  -webkit-animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: roadRunnerOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: roadRunnerOut 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #modal-container.six {

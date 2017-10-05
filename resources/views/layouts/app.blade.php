@@ -37,6 +37,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+                        <li><a href="/home">Dashboard</a></li>
                         <li><a href="/fixtures">Fixtures</a></li>
                         &nbsp;
                     </ul>
@@ -55,7 +56,6 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="/home">Dashboard</a>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

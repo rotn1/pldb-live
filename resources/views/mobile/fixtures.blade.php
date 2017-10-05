@@ -29,7 +29,7 @@
         		</tbody>
         	</table>
 
-        	<div class="well" id="modal-container">
+        	<div id="modal-container">
                 <div class="modal-background">
                     <div class="modal">
                         <div style="margin-top: 20px;" class="col-sm-12 text-center" id="live-div">
